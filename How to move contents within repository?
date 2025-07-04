@@ -1,0 +1,13 @@
+## GitHub commands to be used to move contents between repositories. ChatGPT helped me with these steps and worked smoothly.
+
+## Prerequisites:
+
+Need to be installed - VS Code, Git
+
+1. Clone Parent Repo -> git clone https://github.com/username/parentrepo.git
+2. cd parentrepo
+3. Add chile repo remotely -> git remote add remoteaddname https://github.com/username/childrepo.git
+4. git fetch remoteaddname
+5. Add child repo as a directory to parent repo -> git subtree add --prefix=childrepo ml main --squash
+6. git push origin main
+7. To reuse the remoteaddname - git remote remove remoteaddname
